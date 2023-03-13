@@ -1,0 +1,161 @@
+
+
+/* foto - Sección del Header/Title/Her */
+
+.title{
+    background: url(../assets/f-header.png);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.title__div{  /*padre*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+    height: 45vh;
+   padding-top:3rem;
+    width: 100vw;
+    height: auto;
+}
+
+.title__network__item{
+    color: #cad6ee;
+}
+
+/*Foto*/
+
+.title__profile{
+    border:2px solid rgb(138, 134, 134);
+    box-shadow: 0px 0px 79px 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    height: 35vw;
+    width: 35vw;
+    margin: 0 auto;
+    object-fit: cover;
+    align-self: flex-start;
+
+}
+ /*texto hola soy programador*/
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    order: -1;
+    width:70vw;
+    height: auto;
+}
+
+            /*Ul de redes sociales*/
+
+.title__network{
+    display: flex;
+    padding-left: 0;
+    z-index: 99;
+    position: relative;
+ }
+            
+.title__network__item a {    /* cada item li*/
+    padding-right: 20px;
+    color: #cad6ee;
+    text-decoration: none;
+    width: auto;
+    height: auto
+}
+.title__network__item a:hover{
+    text-decoration: none;
+    color: #2fc221;
+}
+
+/*texto*/
+
+.title__bio{
+width: auto;
+height: auto;
+font-family: 'Raleway';
+font-style: italic;
+font-weight: 500;
+font-size: 3.8vw;
+line-height: 7vw;
+text-align: center;
+}
+.title__subsection{
+width: auto;
+height: auto;
+font-family: 'Raleway';
+font-style: italic;
+font-weight: 400;
+font-size: 3vw;
+line-height: 4vw;
+text-decoration-line: none;
+color: #bbbdbe;
+margin: 2vw 0;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px) {
+    .title__div{  /*padre*/
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 70vw;
+       /* padding-top:30vh; para menu cuando esta fixed position*/
+    }
+    .title__profile{
+        height: 15vw;
+        width: 15vw;
+        line-height:5vw;
+    }
+    .title__container{
+        width:50vw;
+    }
+     /*texto*/
+
+.title__bio{
+    font-size: 2vw;
+    }
+    .title__subsection{
+    font-size: 1.2vw;
+    line-height: 4vh;
+    text-decoration-line: underline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title__div{  /*padre*/
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 70vw;
+       /* padding-top:25vh;para menu cuando esta fixed position*/
+    }
+    .title__profile{
+        height: 15vw;
+        width: 15vw;
+        line-height:5vw;
+    }
+    .title__container{
+        width:50vw;
+    }
+     /*texto*/
+
+.title__bio{
+    font-size: 2.5vw;
+    }
+    .title__subsection{
+    font-size: 1.7vw;
+    line-height: 4vh;
+    }
+    .title__network{
+        margin: 2vw 0;
+    }
+    
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/

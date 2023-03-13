@@ -1,0 +1,90 @@
+
+
+/*Seccion de Skills*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    background: url(../assets/f-hobbies.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.skills__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    justify-content: center;
+
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    }
+.skills__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    color: #000;
+    flex-wrap: wrap;
+}
+.skills__box{
+    display: flex;
+    width: 28vw;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    height:26vw;
+    margin: 1rem auto;
+    z-index: 99;
+    position: relative;
+}
+
+.skills__title{
+
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px) {
+    .skills__box{
+        display: flex;
+        width: 10vw;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        height:8vw;
+        margin: 2rem auto;
+        z-index: 99;
+        position: relative;
+    }
+    .skills__line{
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .skills__box{
+        display: flex;
+        width: 21vw;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        height:18vw;
+        margin: 2vw auto;
+        z-index: 99;
+        position: relative;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/

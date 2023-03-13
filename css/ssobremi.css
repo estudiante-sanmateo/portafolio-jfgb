@@ -1,0 +1,117 @@
+
+
+/* Seccion sobre mi*/
+
+.about{
+    width: 100%;
+    background: #EAF2FD;
+    margin: 0 auto;
+    opacity: 2;
+    background: url(../assets/f-soy-movil.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: scroll;
+    z-index: 99;
+    position: relative;
+    height: auto;
+    padding: 7vw 0 7vw 0;
+}
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    width: 70%;
+    justify-content: center;
+    color: #000;
+    margin: 0 auto;
+}
+
+.about__title{
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-decoration-line: underline;
+}
+
+.about__paragraph{
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+}
+.about__paragraph{
+    line-height: 3vh;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px) {
+    .about{
+        width: 100%;
+        margin: 0 auto;
+        background: url(../assets/f-soy.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment: cover;
+        padding: 7vw 0 7vw 0;
+    }
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 70%;
+        justify-content: center;
+        color: #000;
+        margin: 0 auto;
+    }
+    .about__paragraph{
+        width: 55vw;
+        line-height: 4vh;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about{
+        width: 100%;
+        background: #EAF2FD;
+        margin: 0 auto;
+        opacity: 2;
+        background: url(../assets/f-soy-tablet.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment: scroll;
+        z-index: 99;
+        position: relative;
+        height: auto;
+        padding: 7vw 0 7vw 0;
+    }
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: auto;
+        width: 70%;
+        justify-content: center;
+        color: #000;
+        margin: 0 auto;
+    }
+    .about__paragraph{
+        line-height: 4vh;
+    }
+    
+    
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
